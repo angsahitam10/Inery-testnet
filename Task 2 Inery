@@ -103,6 +103,7 @@ class [[inery::contract]] inrcrud : public inery::contract {
             print("Data: ", data);
         }
 
+
             [[inery::action]] void destroy( uint64_t id ) {
             records recordstable( _self, id );
             auto existing = recordstable.find( id );
